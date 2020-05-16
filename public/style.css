@@ -1,3 +1,73 @@
 body {
-  padding: 40px;
+  font-style: arial, sans-serif;
+}
+
+/* Section 1 */
+.section1 {
+    background-color: rgba(195, 245, 60, 1);
+    border-bottom: 1px solid #000000;
+    position: relative;
+    width: 100%;
+    height: 552px;
+    display: flex;
+    justify-content: center;
+}
+
+.section1__text-container {
+    width: 30%;
+    font-weight: 500;
+}
+
+.section1__title {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.section1__text {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.section1_button {
+    margin-top: 20px;
+}
+
+.section1__signup {
+    background-color: rgb(4, 12, 20);
+    padding: 10px 16px;
+    border-radius: 24px;
+    color: #ffffff;
+}
+
+/* Section 2 */
+.section2 {
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    height: 413px;
+}
+
+/* Section 3 */
+.section3 {
+    width: 100%;
+    height: 605px;
+}
+
+/* Section 4 */
+.section4 {
+    background-color: #000000;
+    width: 100%;
+    height: 680px;
+}
+
+/* Section 5 */
+.section5 {
+    width: 100%;
+    height: 771px;
+    background-color: rgb(240, 235, 230);
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
 }

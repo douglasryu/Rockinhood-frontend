@@ -13,29 +13,102 @@ html
         a(class="nav-item nav-link index-nav__support" href="/support") Support
         a(class="nav-item nav-link index-nav__signin" href="/login") Sign In
         a(class="nav-item nav-link index-nav__signup" href="/signup") Sign Up
+
     div(class="section1")
         div.section1__text-container
             div.section1__title It's Time to Do Money
             div.section1__text Robinhood, a pioneer of commission-free investing, gives you more ways to make your money work harder.
-            a(class="section1__signup" href="/signup") Sign Up
+            div.section1__button
+                a(class="section1__signup" href="/signup") Sign Up
         div.section1__image-container
             //- ToDo place image
+
     div(class="section2")
         div.section2__title Break Free from Commission Fees
         div.section2__text Make unlimited commission-free trades in stocks, ETFs, and options with Robinhood Financial, as well as buy and sell cryptocurrencies with Robinhood Crypto. See our <a href="/fee-schedule">fee schedule</a> to learn more about cost.
         div.section2__disclosure Commissions Disclosure
+
     div(class="section3")
         div.section3__text-container
-            div.section3__title
-            div.section3__
-            div.section3__title
+            div.section3__title Introducing Fractional Shares
+            div.section3__subheading Invest in thousands of stocks with as little as $1.
+            div.section3__block-title Invest Any Amount
+            div.section3__block-text Choose how much you want to invest, and we’ll convert from dollars to parts of a whole share.
+            div.section3__block-title Build a Balanced Portfolio
+            div.section3__block-text Customize your portfolio with pieces of different companies and funds to help reduce risk.
+            div.section3__block-title Trade in Real Time
+            div.section3__block-text Trades placed during market hours are executed at that time, so you’ll always know the share price.
+            div.section3__form-container
+                form(method="post", action="/early-action")
+                    input(type="text" placeholder="name@email.com" required)
+                    button(type="submit") Get Early Access
+                //-ToDo think about what we will do with the form
+            div.section3__disclosure Fractional Shares Disclosure
         div.section3__image-container
             //- ToDo place image
+
     div(class="section4")
+        div.section4__nav
+            div.section4__nav--up
+                button up
+            div.section4__nav--learn
+                button Learn
+            div.section4__nav--manage
+                button Manage
+            div.section4__nav--customize
+                button Customize
+            div.section4__nav--down
+                button down
+        div.section4__image
+            //-ToDo place image
+        div.section4__text-container
+            div.section4__text-container--title Learn As You Grow
+            div.section4__text-container--text Our goal is to make investing in financial markets more affordable, more intuitive, and more fun, no matter how much experience you have (or don’t have).
+
     div(class="section5")
-    div(class="section6")
-    div(class="section7")
+        div.section5__title Our Products
+        div.section5__image
+            //-ToDo place image
+        div.section5__nav
+            div.section5__nav--cash-management Cash Management
+            div.section5__nav--stock-fund Stocks & Funds
+            div.section5__nav--options Options
+            div.section5__nav--gold Gold
+            div.section5__nav--crypto Crypto
+            div.section5__nav--cm-text Earn 0.30% APY* on your uninvested cash and get more flexibility with your brokerage account.
+            div.section5__nav--sf-text Get mobile access to the markets. Invest commission-free in individual companies or bundles of investments (ETFs).
+            div.section5__nav--o-text Be bullish on stocks you believe in and bearish on the ones you don’t. It’s your call.
+            div.section5__nav--g-text Access research reports, trade on margin, and make bigger deposits with quicker access to funds—all starting at $5 per month.
+            div.section5__nav--c-text Tap into the cryptocurrency market to buy, HODL, and sell Bitcoin, Ethereum, Dogecoin, and more, 24/7 with Robinhood Crypto.
+            div.section5__nav--button
+                button Learn More
+            //-ToDo implement different disclosures
+            div.section5__nav--disclosure Variable APY and Debit Card Disclosure
+            div.section5__nav--small-text Cash Management offered through Robinhood Financial
 
 
-
-    h1 Hello world!
+    div(class="footer")
+        div(class="section6")
+            div.section6__links-container
+                div.section6__links-col1
+                    a.section6__links-stock-fund Stocks & Funds
+                    a.section6__links-options Options
+                    a.section6__links-gold Gold
+                    a.section6__links-cash-manangement Cash Management
+                    a.section6__links-crypto Crypto
+                div.section6__links-col2
+                    a.section6__links-learn Learn
+                    a.section6__links-support Support
+                    a.section6__links-snacks Snacks
+                div.section6__links-col3
+                    a.section6__links-about About Us
+                    a.section6__links-careers Careers
+                    a.section6__links-news Company News
+            //-ToDo Think about what to include
+        div(class="section7")
+            div.section7__text-container
+                div.section7__text1 © 2020 Robinhood. All rights reserved.
+                div.section7__text2 Robinhood means Robinhood Markets and its in-application and web experiences with its family of wholly owned subsidiaries which includes Robinhood Financial, Robinhood Securities, Robinhood Crypto, and Robinhood U.K.
+                div.section7__text3 All investments involve risks, including the possible loss of capital.
+                div.section7__text4 © 2020 Robinhood. All rights reserved.Securities trading is offered to self-directed customers by Robinhood Financial. Robinhood Financial is a member of the <a href="https://www.finra.org/">Financial Industry Regulatory Authority (FINRA)</a>.
+            div.section7__disclosure View Important Disclosures
