@@ -1,4 +1,4 @@
-**Front-end Endpoints**
+## Front-end Endpoints
 
 1. "/" - Splash/Landing Page​
 2. "/" - (Once logged in) Dashboard - Portfolio Page
