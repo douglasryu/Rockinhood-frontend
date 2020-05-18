@@ -32,59 +32,64 @@ html
         div.section3__text-container
             div.section3__title Introducing Fractional Shares
             div.section3__subheading Invest in thousands of stocks with as little as $1.
-            div.section3__block-title Invest Any Amount
-            div.section3__block-text Choose how much you want to invest, and we’ll convert from dollars to parts of a whole share.
-            div.section3__block-title Build a Balanced Portfolio
-            div.section3__block-text Customize your portfolio with pieces of different companies and funds to help reduce risk.
-            div.section3__block-title Trade in Real Time
-            div.section3__block-text Trades placed during market hours are executed at that time, so you’ll always know the share price.
+            div.section3__block-container
+                div.section3__block-container--1
+                    div.section3__block-title Invest Any Amount
+                    div.section3__block-text Choose how much you want to invest, and we’ll convert from dollars to parts of a whole share.
+                div.section3__block-container--2
+                    div.section3__block-title Build a Balanced Portfolio
+                    div.section3__block-text Customize your portfolio with pieces of different companies and funds to help reduce risk.
+                div.section3__block-container--3
+                    div.section3__block-title Trade in Real Time
+                    div.section3__block-text Trades placed during market hours are executed at that time, so you’ll always know the share price.
             div.section3__form-container
                 form(method="post", action="/early-action")
-                    input(type="text" placeholder="name@email.com" required)
-                    button(type="submit") Get Early Access
+                    input(type="text" class="section3__input" placeholder="name@email.com" required)
+                    div.section3__button-container
+                        button(type="submit" class="section3__button") Get Early Access
                 //-ToDo think about what we will do with the form
             div.section3__disclosure Fractional Shares Disclosure
         div.section3__image-container
-            //- ToDo place image
+            img(src="https://cdn.robinhood.com/assets/robinhood/brand/1006e4b792847a66da3836fe234d3ec2-1x.png")
 
     div(class="section4")
-        div.section4__nav
-            div.section4__nav--up
-                button up
-            div.section4__nav--learn
-                button Learn
-            div.section4__nav--manage
-                button Manage
-            div.section4__nav--customize
-                button Customize
-            div.section4__nav--down
-                button down
+        nav.section4__nav
+            button(type="button" class="section4__nav--up") up
+            ul.section4__nav-text
+                li.section4__nav-element
+                    button.section4__nav--button Learn
+                li.section4__nav-element
+                    button.section4__nav--button Manage
+                li.section4__nav-element
+                    button.section4__nav--button Customize
+            button(type="button" class="section4__nav--down") down
         div.section4__image
-            //-ToDo place image
+            img(src="https://cdn.robinhood.com/assets/robinhood/brand/082fbd2b61170c3860fbc4d1913d74cf-1x.png")
         div.section4__text-container
             div.section4__text-container--title Learn As You Grow
             div.section4__text-container--text Our goal is to make investing in financial markets more affordable, more intuitive, and more fun, no matter how much experience you have (or don’t have).
 
     div(class="section5")
         div.section5__title Our Products
-        div.section5__image
-            //-ToDo place image
         div.section5__nav
             div.section5__nav--cash-management Cash Management
             div.section5__nav--stock-fund Stocks & Funds
             div.section5__nav--options Options
             div.section5__nav--gold Gold
             div.section5__nav--crypto Crypto
+        div.section5__nav-text-container
             div.section5__nav--cm-text Earn 0.30% APY* on your uninvested cash and get more flexibility with your brokerage account.
             div.section5__nav--sf-text Get mobile access to the markets. Invest commission-free in individual companies or bundles of investments (ETFs).
             div.section5__nav--o-text Be bullish on stocks you believe in and bearish on the ones you don’t. It’s your call.
             div.section5__nav--g-text Access research reports, trade on margin, and make bigger deposits with quicker access to funds—all starting at $5 per month.
             div.section5__nav--c-text Tap into the cryptocurrency market to buy, HODL, and sell Bitcoin, Ethereum, Dogecoin, and more, 24/7 with Robinhood Crypto.
-            div.section5__nav--button
-                button Learn More
+            div.section5__nav--button-container
+                button.section5__nav--button Learn More
             //-ToDo implement different disclosures
             div.section5__nav--disclosure Variable APY and Debit Card Disclosure
             div.section5__nav--small-text Cash Management offered through Robinhood Financial
+        div.section5__image
+            img(class="section5__image-ele" src="https://cdn.robinhood.com/assets/robinhood/brand/e46bb5ae43b4085ee9a2e2d576047a37-1x.png")
 
 
     div(class="footer")
