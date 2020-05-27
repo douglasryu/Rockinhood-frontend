@@ -1,0 +1,58 @@
+extends layout.pug
+
+block content
+    include includes/navigation.pug
+    div.company__body
+        div.company__title
+        div.company__price
+        div.company__price-change
+        div.company__chart-container
+            div.company__chart
+            div.company__chart-select-container
+                button.company__chart-select 1D
+                button.company__chart-select 1W
+                button.company__chart-select-1 1M
+                button.company__chart-select 3M
+                button.company__chart-select 1Y
+                button.company__chart-select 5Y
+        div.company__about
+            div.company__about-title About
+            div.company__about-text Description
+            div.company__about-information-container
+                div.company__about-ceo CEO
+                div.company__about-ceo-data
+                div.company__about-employees Employees
+                div.company__about-employees-data
+                div.company__about-headquarters Headquarters
+                div.company__about-headquarters-data
+                div.company__about-founded Founded
+                div.company__about-founded-data
+                div.company__about-marketcap Market Cap
+                div.company__about-marketcap-data
+                div.company__about-pe-ratio Price-Earnings Ratio
+                div.company__about-pe-ratio-data
+                div.company__about-dividend-yield Dividend Yield
+                div.company__about-dividend-yield-data
+                div.company__about-avgvolume Average Volume
+                div.company__about-avgvolume-data
+        div.company__news
+            div.company__news-title News
+            div.company__news-news
+        div.company__buy
+            div.company__buy-title Buy
+            div.company__buy-share Shares
+                input(class="company__buy-share-input" type="number" placeholder="0")
+            div.company__buy-market-price Market Price
+                div.company__buy-price
+            div.company__buy-estimated-cost Estimated Cost
+                div.company__buy-cost
+            button.company__buy-order-button Purchase
+            button.company__sell-order-button Sell Stock
+            div.company__buy-buying-power
+            div.historicalc <i class="fa fa-exclamation-circle"></i> These prices are delayed and not to be used for trading purposes.
+        div.company__remove
+            button.company__remove-watch
+    script(src="/js/company.js" type="module")
+    script(src="/js/sign-out.js" type="module")
+    script(src="/js/news_comp.js" type="module")
+    script(src="/js/search.js" type="module")
